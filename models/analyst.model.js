@@ -10,12 +10,12 @@ const analystSchema = new Schema({
         required: true
       },
     empId: String,
- 
-      sessionOne: Number,
-      sessionTwo: Number,
-      others: Number,
-      comments: String,
-      total: Number,
+ sessionOne: String,
+      // sessionOne: Number,
+      // sessionTwo: Number,
+      // others: Number,
+      // comments: String,
+      // total: Number,
 
   projectName: {
     type: String,

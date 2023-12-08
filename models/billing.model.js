@@ -8,13 +8,13 @@ const billingSchema = new Schema({
     projectname: String,
     reportDate: Date,
     empId: String,
-    batch: String,
-    associated:{
-        annotation: Number,
-        qc: Number,
-        pm: Number,
-        total: Number
-    },
+    batch: Number,
+    // associated:{
+    //     annotation: Number,
+    //     qc: Number,
+    //     pm: Number,
+    //     total: Number
+    // },
     // hours:{
     //     annotation: Number,
     //     qc: Number,
