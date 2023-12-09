@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b8a4e7a7.css",
-    "main.js": "/static/js/main.b0929c7e.js",
+    "main.js": "/static/js/main.b5d45765.js",
     "static/media/man.jpg": "/static/media/man.9bb9e68df98d4d17e22d.jpg",
     "static/media/logo (1).jpg": "/static/media/logo (1).d57bd58c83fa60455407.jpg",
     "static/media/bg-profile.jpeg": "/static/media/bg-profile.af1219a742e09fc7b612.jpeg",
@@ -10,12 +10,14 @@
     "static/media/bruce-mars.jpg": "/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
     "static/media/cartoon.png": "/static/media/cartoon.6f90f906a1d2e572a396.png",
     "static/media/fav-1.png": "/static/media/fav-1.bd56fec31fb33b5c2e26.png",
+    "static/media/check-in.png": "/static/media/check-in.8e4a8d3fe010897a2bf5.png",
+    "static/media/check-out.png": "/static/media/check-out.feb954d00a86c94ac544.png",
     "index.html": "/index.html",
     "main.b8a4e7a7.css.map": "/static/css/main.b8a4e7a7.css.map",
-    "main.b0929c7e.js.map": "/static/js/main.b0929c7e.js.map"
+    "main.b5d45765.js.map": "/static/js/main.b5d45765.js.map"
   },
   "entrypoints": [
     "static/css/main.b8a4e7a7.css",
-    "static/js/main.b0929c7e.js"
+    "static/js/main.b5d45765.js"
   ]
 }
