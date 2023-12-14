@@ -49,7 +49,7 @@ app.use('/analyst',Analyst);
 app.use('/emp-attendance',Attendance);
 app.use('/billing',Billing);
 app.use('/team',Team);
-app.use('/create-task',Task);
+app.use('/create',Task);
 // app.post('/api/saveAttendance', async (req, res) => {
 //     try {
 //       const { checkInTime } = req.body;
@@ -111,11 +111,18 @@ app.use('/create-task',Task);
 //       res.status(500).json({ message: 'Internal server error' });
 //     }
 //   });
-  
+
+
+//    For build
 app.use(express.static(path.join(__dirname , 'client/build')))
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname , '/client/build','index.html'));
 });
+// app.use(express.static(path.join(__dirname, 'public')));
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
 
 app.listen(port,()=>{
     console.log(`Server Running On Port : ${port}`);
