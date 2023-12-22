@@ -54,69 +54,7 @@ app.use('/emp-attendance', Attendance);
 app.use('/billing', Billing);
 app.use('/team', Team);
 app.use('/create', Task);
-// app.post('/api/saveAttendance', async (req, res) => {
-//     try {
-//       const { checkInTime } = req.body;
 
-//       // Format check-in time using moment.js with explicit format
-//       const formattedCheckInTime = moment(checkInTime, 'hh:mm a').format('hh:mm a');
-
-//       // Save check-in time to MongoDB
-//       const attendance = new Attendance({
-//         checkInTime: formattedCheckInTime,
-//       });
-
-//       await attendance.save();
-
-//       res.status(201).json({ message: 'Check-in time saved successfully' });
-//     } catch (error) {
-//       console.error(error);
-//       res.status(500).json({ message: 'Internal server error' });
-//     }
-//   });
-
-//   // Endpoint to save check-out time
-//   app.post('/api/saveCheckout', async (req, res) => {
-//     try {
-//       const { checkOutTime } = req.body;
-
-//       // Format check-out time using moment.js with explicit format
-//       const formattedCheckOutTime = moment(checkOutTime, 'hh:mm a').format('hh:mm a');
-
-//       // Save check-out time to MongoDB
-//       const attendance = new Attendance({
-//         checkOutTime: formattedCheckOutTime,
-//       });
-
-//       await attendance.save();
-
-//       res.status(201).json({ message: 'Checkout time saved successfully' });
-//     } catch (error) {
-//       console.error(error);
-//       res.status(500).json({ message: 'Internal server error' });
-//     }
-//   });
-
-// Endpoint to get the latest attendance data
-// app.get('/api/getAttendance', async (req, res) => {
-//     try {
-//       const latestAttendance = await Attendance.findOne({}, {}, { sort: { 'checkinTime': -1 } });
-
-//       if (latestAttendance) {
-//         res.status(200).json({
-//           checkinTime: moment(latestAttendance.checkinTime).format(),
-//           checkoutTime: latestAttendance.checkoutTime ? moment(latestAttendance.checkoutTime).format() : null,
-//         });
-//       } else {
-//         res.status(404).json({ message: 'No attendance data found' });
-//       }
-//     } catch (error) {
-//       console.error(error);
-//       res.status(500).json({ message: 'Internal server error' });
-//     }
-//   });
-
-// MongoDB Schema
 const employeeSchema = new mongoose.Schema({
   emp_id: String,
   emp_name: String,
